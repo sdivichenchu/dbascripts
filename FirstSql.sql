@@ -14,6 +14,8 @@ SERVERPROPERTY('ProductBuild') AS [ProductBuild],
 SERVERPROPERTY('ProductBuildType') AS [ProductBuildType],  -- Is this a GDR or OD hotfix (NULL if on a CU build)
 SERVERPROPERTY('ProductUpdateReference') AS [ProductUpdateReference], -- KB article number that is applicable for this build
 SERVERPROPERTY('ProcessID') AS [ProcessID],
+
+
 SERVERPROPERTY('Collation') AS [Collation], 
 SERVERPROPERTY('IsFullTextInstalled') AS [IsFullTextInstalled], 
 SERVERPROPERTY('IsIntegratedSecurityOnly') AS [IsIntegratedSecurityOnly],
@@ -26,3 +28,7 @@ SERVERPROPERTY('BuildClrVersion') AS [Build CLR Version],
 SERVERPROPERTY('IsXTPSupported') AS [IsXTPSupported],
 SERVERPROPERTY('IsPolybaseInstalled') AS [IsPolybaseInstalled],-- New for SQL Server 2016
 SERVERPROPERTY('IsAdvancedAnalyticsInstalled') AS [IsRServicesInstalled];-- New for SQL Server 2016
+SERVERPROPERTY('ProductBuildType') AS [ProductBuildType],  -- Is this a GDR or OD hotfix (NULL if on a CU build)
+SERVERPROPERTY('ProductUpdateReference') AS [ProductUpdateReference], -- KB article number that is applicable for this build
+SERVERPROPERTY('ProcessID') AS [ProcessID],
+
